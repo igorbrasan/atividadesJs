@@ -1,4 +1,4 @@
-# estudoJs
+# atividadesJs
 
 Repository dedicated for basic javascript exercises. May or may not come with some html/css, but that's not my focus.
 
