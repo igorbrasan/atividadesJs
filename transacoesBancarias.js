@@ -7,9 +7,9 @@ const user = {
 
 function createTransaction(type, value){
     user.transactions.push( {'type': type, 'value': value, })
-    if(type == 'credit'){
+    if(type === 'credit'){
         user.balance = user.balance + value;
-    }else if(type == 'debit'){
+    }else if(type === 'debit'){
         user.balance = user.balance - value;
 
     }
@@ -33,7 +33,7 @@ function getAverageTransactionByType(type){
     let avg = 0;
     let count = 0;
     for(let transaction of user.transactions){
-        if(transaction.type == type){
+        if(transaction.type === type){
             count++;
             avg = avg + transaction.value;
         }
